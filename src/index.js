@@ -8,4 +8,4 @@ const musicClient = require(path.resolve("src", "base", "Music"));
 
 client.music = new musicClient(youtube, client);
 
-client.connect();
+client.connect(process.env.TOKEN);
